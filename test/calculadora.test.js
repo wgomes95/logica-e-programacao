@@ -20,10 +20,14 @@ describe('Testes da Função de Soma', function () {
 
     it('A função deve ser capaz de somar dois números negativos', function () {
         // Coleta o resultado da função
-        const resultadoDaSoma = somarDoisNumeros(-50, -150);
+        const resultadoDaSoma = somarDoisNumeros(-15, -20);
         
         // Compara o resultado com o valor que você espera
         expect(resultadoDaSoma).to.equal(-200);
+    });
+    it ('A função deve somar dois números zerados', function () {
+        const resultadoDaSoma = somarDoisNumeros(0, 0);
+        expect (resultadoDaSoma).to.equal(0);
     });
 });
 
